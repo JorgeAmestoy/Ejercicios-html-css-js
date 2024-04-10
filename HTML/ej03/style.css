@@ -1,0 +1,15 @@
+label[for="descGratuita"], 
+label[for="descBasica"], 
+label[for="descPremium"] {
+    color: gray;
+}
+
+.descripcion {
+    display: none; 
+    color: gray;
+}
+
+input[type="radio"]:checked + label + .descripcion {
+    display: block; 
+}
+
