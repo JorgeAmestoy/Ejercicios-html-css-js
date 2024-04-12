@@ -53,17 +53,17 @@ th, td{
 
 
 tr:nth-child(1) {
-    background-color: lightgray; /* Primera fila gris claro */
+    background-color: lightgray;
 }
 
 tr:nth-child(2) {
-    background-color: lightyellow; /* Segunda fila amarillo claro */
+    background-color: lightyellow;
 }
 
 tr:nth-child(3) {
-    background-color: lightgreen; /* Tercera fila verde claro */
+    background-color: lightgreen;
 }
 
 tr:nth-child(4) {
-    background-color: lightblue; /* Cuarta fila azul claro */
+    background-color: lightblue;
 }
