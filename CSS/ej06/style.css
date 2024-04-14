@@ -1,0 +1,89 @@
+.cuadrados,
+.redondeados,
+.circulos {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px; 
+    padding: 10px; 
+    place-content: center;
+    
+}
+
+.cuadrado {
+    width: 50px;
+    height: 50px;
+    border: 3px solid black;
+    rotate: 45deg;
+}
+
+
+.cuadrado.rojo {
+    background-color: red;
+}
+
+.cuadrado.naranja {
+    background-color: orange;
+    border-color: red; 
+}
+
+.cuadrado.amarillo {
+    background-color: yellow;
+    border-color: orange; 
+}
+
+.cuadrado.verde {
+    background-color: green;
+    border-color: yellow;
+}
+
+.cuadrado.azul {
+    background-color: blue;
+    border-color: green; 
+}
+
+
+.redondeado {
+    border-radius: 10%; 
+}
+
+.circulo {
+    border-radius: 50%; 
+}
+
+
+.cuadrado:hover {
+    rotate:0deg;
+}
+
+.cuadrados > :nth-child(5n + 1) {
+    border-style: solid;
+}
+
+.cuadrados > :nth-child(5n + 2) {
+    border-style: dashed;
+}
+
+.cuadrados > :nth-child(5n + 3) {
+    border-style: ridge;
+}
+
+.cuadrados > :nth-child(5n + 4) {
+    border-style: inset;
+}
+
+.cuadrados > :nth-child(5n + 5) {
+    border-style: dotted;
+}
+
+.cuadrados:nth-child(4n + 1) {
+    background-color: lightyellow;
+}
+
+.cuadrados:nth-child(4n + 2) {
+    background-color: lightgreen;
+}
+
+.cuadrados:nth-child(4n + 3) {
+    background-color: lightblue;
+}
+
