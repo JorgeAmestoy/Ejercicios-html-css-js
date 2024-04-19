@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#clockImage {
+    width: 250px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 24px;
+    color: red;
+    display: none;
+}
+
+#contador {
+    margin-top: 20px;
+    font-size: 24px;
+    color: green;
+}
