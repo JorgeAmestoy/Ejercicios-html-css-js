@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <form action="" method="get"id="miFormulario">
+        <div id="divNombre">
+            <label for="nombre"><strong>Nombre:</strong></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        </div><br>
+
+        <div id="divApellido1">
+            <label for="primerApellido"><strong>Primer apellido:</strong></label>
+            <input type="text" name="primerApellido" id="primerApellido" placeholder="Primer apellido" required>
+        </div><br>
+
+        <div id="divApellido2">
+            <label for="segundoApellido"><strong>Segundo apellido:</strong></label>
+            <input type="text" name="segundoApellido" id="segundoApellido" placeholder="Segundo apellido" required>
+        </div><br>
+
+        <div><strong>Dirección:</strong></div><br>
+
+        <div>
+            <label for="tipoVia"><strong>Tipo de via:</strong> </label>
+            <input type="text" name="tipoVia" id="tipoVia" required>
+        </div><br>
+
+        <div>
+            <label for="nombreVia"><strong>Nombre de la vía:</strong></label>
+            <input type="text" name="nombreVia" id="nombreVia" required>
+        </div><br>
+
+        <div>
+            <label for="codigoPostal"><strong>Código Postal:</strong></label>
+            <input type="text" name="codigoPostal" id="codigoPostal" required>
+        </div><br>
+
+        <div>
+            <label for="ciudad"><strong>Ciudad:</strong></label>
+            <input type="text" name="ciudad" id="ciudad" required>
+        </div><br>
+
+        <div>
+            <label for="provincia"><strong>Provincia:</strong></label>
+            <input type="text" name="provincia" id="provincia" required>
+        </div><br>
+
+        <div>
+            <label for="pais"><strong>País:</strong></label>
+            <input type="text" name="pais" id="pais" required>
+        </div><br>
+
+        <div>
+            <label for="fechaNacimiento"><strong>Fecha de nacimiento:</strong></label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+        </div><br>
+
+        <div>
+            <label for="notaMedia"><strong>Nota media en la universidad:</strong></label>
+            <input type="number" name="notaMedia" id="notaMedia" min="0" max="10" step="0.1">
+        </div><br>
+
+        <div>
+            <label for="telefono"><strong>Número de teléfono:</strong></label>
+            <input type="text" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Formato: 123456789" required>
+        </div><br>
+
+        <div>
+            <label for="correo"><strong>Correo electrónico:</strong></label>
+            <input type="email" name="correo" id="correo" placeholder="example@example.com">
+        </div><br>
+
+        <div>
+            <label for="contrasena"><strong>Contraseña:</strong></label>
+            <input type="password" name="contrasena" id="contrasena" required>
+        </div><br>
+
+        <div>
+            <label for="repetirContrasena"><strong>Repetir contraseña:</strong></label>
+            <input type="password" name="repetirContrasena" id="repetirContrasena" required>
+        </div><br>
+
+        <div>
+            <label for="pais"><strong>País:</strong></label>
+            <select name="seleccionPais" id="pais">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Andorra">Andorra</option>
+            </select>
+        </div><br>
+        
+        <div>
+            <input type="radio" name="tipoCuenta" id="gratuita"> 
+            <label for="gratuita">Gratuita</label>
+            <div class="descripcion" id="descGratuita">Cuenta gratuita con funcionalidades básicas.</div>
+        </div>
+        
+        <div>
+            <input type="radio" name="tipoCuenta" id="basica"> 
+            <label for="basica">Básica</label>
+            <div class="descripcion" id="descBasica">Cuenta básica con funcionalidades adicionales.</div>
+        </div>
+        
+        <div>
+            <input type="radio" name="tipoCuenta" id="premium"> 
+            <label for="premium">Premium</label>
+            <div class="descripcion" id="descPremium">Cuenta premium con acceso completo a todas las características.</div>
+        </div><br>
+        
+
+        <textarea name="" cols="30" rows="5" placeholder="Sobre mí..."></textarea><br><br>
+        
+        <div>
+            <label for="foto"><strong>Foto de perfil:</strong></label>            
+        </div><b
+        <div>
+            <input type="file" id="foto" name="foto_perfil">
+        </div><br><br>
+
+        <div>
+            <label for="cv"><strong>CV:</strong></label>            
+        </div><b
+        <div>
+            <input type="file" id="cv" name="cv">
+        </div><br><br>
+            
+<div>
+    <input type="submit" value="Enviar formulario">
+</div>
+        
+</form>
+</body>
+</html>
